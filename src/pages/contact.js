@@ -1,144 +1,126 @@
 import { useState } from "react";
+import {
+  Tabs,
+  Tab,
+  TextField,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Grid from "@mui/material/Unstable_Grid2";
+import { IoLogoInstagram, FaGithub } from "../lib/icons";
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography variant="subtitle1" color="textPrimary" align="center">
+            {children}
+          </Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
 
 function ContactForm() {
   const [subject, setSubject] = useState("");
-  const [body, setBody] = useState("");
+  const [message, setMessage] = useState("");
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const recipient = "example@example.com";
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    const recipient = "eiki111ixa@icloud.com";
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${message}`;
   };
 
   return (
-    <section id="contact">
-      <h1 className="section-header">Contact</h1>
-
-      <div className="contact-wrapper">
-        <form id="contact-form" className="form-horizontal" role="form">
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                placeholder="NAME"
-                name="name"
-                value=""
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                placeholder="EMAIL"
-                name="email"
-                value=""
-                required
-              />
-            </div>
-          </div>
-
-          <textarea
-            className="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            name="message"
-            required
-          ></textarea>
-
-          <button
-            className="btn btn-primary send-button"
-            id="submit"
-            type="submit"
-            value="SEND"
+    <Box sx={{ width: "80%", margin: "auto", marginTop: "10vh" }}>
+      <Typography variant="h2" color="textPrimary" align="center">
+        Contact
+      </Typography>
+      <Typography
+        variant="body1"
+        color="textPrimary"
+        align="center"
+        sx={{ marginTop: 2, marginBottom: 2 }}
+      >
+        ご質問やご相談がございましたら、お気軽にご連絡ください。
+        <br />
+        ビジネスのご依頼や取り扱いに関するお問い合わせも、このフォームから承っております。
+      </Typography>
+      <Grid container spacing={4} minHeight="60vh" alignItems="center">
+        <Grid xs={12} md={12} sx={{ padding: 0 }}>
+          <Box
+            sx={{
+              borderBottom: 1,
+              borderColor: "divider",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: 2,
+            }}
           >
-            <div className="alt-send-button">
-              <i className="fa fa-paper-plane"></i>
-              <span className="send-text">SEND</span>
-            </div>
-          </button>
-        </form>
-
-        <div className="direct-contact-container">
-          <ul className="contact-list">
-            <li className="list-item">
-              <i className="fa fa-map-marker fa-2x">
-                <span className="contact-text place">City, State</span>
-              </i>
-            </li>
-
-            <li className="list-item">
-              <i className="fa fa-phone fa-2x">
-                <span className="contact-text phone">
-                  <a href="tel:1-212-555-5555" title="Give me a call">
-                    (212) 555-2368
-                  </a>
-                </span>
-              </i>
-            </li>
-
-            <li className="list-item">
-              <i className="fa fa-envelope fa-2x">
-                <span className="contact-text gmail">
-                  <a href="mailto:#" title="Send me an email">
-                    hitmeup@gmail.com
-                  </a>
-                </span>
-              </i>
-            </li>
-          </ul>
-
-          <hr />
-          <ul className="social-media-list">
-            <li>
-              <a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-codepen" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className="contact-icon">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-          <div id="particle-canvas"></div>
-          <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-        </div>
-      </div>
-
-      {/* // <form onSubmit={handleSubmit}>
-    //   <label>
-    //     Subject:
-    //     <input
-    //       type="text"
-    //       value={subject}
-    //       onChange={(e) => setSubject(e.target.value)}
-    //     />
-    //   </label>
-    //   <label>
-    //     Body:
-    //     <textarea value={body} onChange={(e) => setBody(e.target.value)} />
-    //   </label>
-    //   <button type="submit">Submit</button>
-    // </form>
-  ); */}
-    </section>
+            <Tabs value={value} onChange={handleChange}>
+              <Tab label="個人宛" />
+              <Tab label="会社宛" />
+            </Tabs>
+          </Box>
+          <TabPanel value={value} index={0}>
+            TEL: 070-3514-7684
+            <br />
+            MAIL: eiki111ixa@icloud.com
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            TEL: 070-3514-7684
+            <br />
+            MAIL: navitex20230509@gmail.com
+          </TabPanel>
+        </Grid>
+        <Grid xs={12} md={12} sx={{ padding: 0 }}>
+          <form onSubmit={handleSubmit}>
+            <TextField
+              required
+              fullWidth
+              margin="normal"
+              label="件名"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <TextField
+              required
+              fullWidth
+              margin="normal"
+              label="内容"
+              multiline
+              rows={6}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <Box
+              sx={{ display: "flex", justifyContent: "center", marginTop: 2 }}
+            >
+              <Button variant="contained" type="submit">
+                送信
+              </Button>
+            </Box>
+          </form>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 

@@ -139,18 +139,18 @@ li {
 /*--------------------------------
  プロフィール
 ---------------------------------*/
-.profile {
+.top {
   padding: 50px 0;
 }
 
-.profile-title {
+.top-title {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
   color: #737d6d;
 }
 
-.profile-text {
+.top-text {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -226,25 +226,6 @@ li {
 }
 
 /*--------------------------------
- Contact
----------------------------------*/
-.contact-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contact-item {
-  display: block;
-  margin: 0 20px;
-  text-align: center;
-}
-
-.contact-text {
-  margin-top: 10px;
-  text-align: center;
-}
-/*--------------------------------
  ページトップ
 ---------------------------------*/
 .page-top {
@@ -263,8 +244,11 @@ li {
  フッター
 ---------------------------------*/
 .footer {
-  padding: 30px;
-  background-color: #737d6d;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
 }
 
 .copyright {
@@ -371,10 +355,10 @@ li {
   }
 
   /* プロフィール */
-  .profile {
+  .top {
     padding: 30px 0;
   }
-  .profile-title {
+  .top-title {
     font-size: 20px;
   }
 
