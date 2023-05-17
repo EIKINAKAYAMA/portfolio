@@ -1,7 +1,7 @@
+import BusinessWorkCards from "@/components/BusinessWorkCards";
+import HabitWorkCards from "@/components/HabitWorkCards";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { useState } from "react";
-import BusinessWorkCards from "../components/BusinessWorkCards";
-import HabitWorkCards from "../components/HabitWorkCards";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

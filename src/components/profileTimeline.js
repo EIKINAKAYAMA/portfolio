@@ -4,8 +4,8 @@ import {
   TimelineContent,
   TimelineDot,
   TimelineItem,
-  TimelineSeparator,
   TimelineOppositeContent,
+  TimelineSeparator,
 } from "@mui/lab";
 
 export default function ProfileTimeline() {
