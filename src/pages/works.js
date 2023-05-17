@@ -1,9 +1,9 @@
-import BusinessWorkCards from "@/components/BusinessWorkCards";
-import HabitWorkCards from "@/components/HabitWorkCards";
+import BusinessCards from "@/components/works/BusinessCards";
+import HabitCards from "@/components/works/HabitCards";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { useState } from "react";
 
-function TabPanel(props) {
+const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
   return (
     <div
@@ -22,9 +22,9 @@ function TabPanel(props) {
       )}
     </div>
   );
-}
+};
 
-function Works() {
+export default function Works() {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -57,12 +57,11 @@ function Works() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <HabitWorkCards />
+        <HabitCards />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <BusinessWorkCards />
+        <BusinessCards />
       </TabPanel>
     </Box>
   );
 }
-export default Works;

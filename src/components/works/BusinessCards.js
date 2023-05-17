@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2";
-import ImageCard from "./common/ImageCard";
+import ImageCard from "./ImageCard";
 
-export default function HabitWorkCards() {
+export default function BusinessCards() {
   return (
     <Grid container spacing={4}>
       <Grid xs={12} sm={6} md={4}>

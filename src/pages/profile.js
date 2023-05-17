@@ -1,4 +1,4 @@
-import ProfileTimeline from "@/components/profileTimeline";
+import ProfileTimeline from "@/components/profile/ProfileTimeline";
 import { Avatar, Box, Grid, Typography, useMediaQuery } from "@mui/material";
 
 const calculateAge = (birthday) => {
@@ -16,13 +16,7 @@ const calculateAge = (birthday) => {
   return age;
 };
 
-function Profile() {
-  const historyData = [
-    { date: "2022/01/01", event: "イベント1" },
-    { date: "2022/02/15", event: "イベント2" },
-    // 自分の履歴データをここに追加
-  ];
-
+export default function Profile() {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
@@ -68,4 +62,3 @@ function Profile() {
     </Box>
   );
 }
-export default Profile;
