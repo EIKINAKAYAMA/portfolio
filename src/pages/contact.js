@@ -1,16 +1,6 @@
-import { useState } from "react";
-import {
-  Tabs,
-  Tab,
-  TextField,
-  Typography,
-  Button,
-  Box,
-  IconButton,
-} from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Button, Tab, Tabs, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import { IoLogoInstagram, FaGithub } from "../lib/icons";
+import { useState } from "react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,7 +39,13 @@ function ContactForm() {
   };
 
   return (
-    <Box sx={{ width: "80%", margin: "auto", marginTop: "10vh" }}>
+    <Box
+      sx={{
+        width: "80%",
+        margin: "auto",
+        my: "10vh",
+      }}
+    >
       <Typography variant="h2" color="textPrimary" align="center">
         Contact
       </Typography>
