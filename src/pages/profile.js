@@ -1,5 +1,12 @@
 import ProfileTimeline from "@/components/profile/ProfileTimeline";
-import { Avatar, Box, Grid, Typography, useMediaQuery } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Grid,
+  Typography,
+  useMediaQuery,
+  Divider,
+} from "@mui/material";
 
 const calculateAge = (birthday) => {
   const birthDate = new Date(birthday);
@@ -54,11 +61,53 @@ export default function Profile() {
             {calculateAge("1994-11-01")}歳
           </Typography>
           <Typography variant="body1" color="textPrimary">
-            フルスタックエンジニア/コンサルタント
+            フルスタックエンジニア
+          </Typography>
+          <Typography variant="caption" color="textPrimary">
+            先端技術を取り入れ、マイクロ化していくサービスを、
+            <br />
+            高速・安定・低コストに、ローンチする手伝いをしています。
           </Typography>
         </Grid>
       </Grid>
+      <Typography variant="h3" color="textPrimary" align="center">
+        来歴
+      </Typography>
+      <Divider sx={{ my: "20px" }} />
       <ProfileTimeline />
+      <Divider sx={{ my: "50px" }} />
+      <Typography
+        sx={{ my: "50px" }}
+        variant="h4"
+        color="textPrimary"
+        align="center"
+      >
+        ご相談・案件お待ちしています。
+        <Typography
+          sx={{ my: "20px" }}
+          variant="body1"
+          color="textPrimary"
+          align="center"
+        >
+          【エンジニアを探している方】
+          <br />
+          私が得意としない領域でも、優秀な仲間をご紹介させていただきます。
+          <br />
+          ぜひ、一度ご相談ください。
+        </Typography>
+        <Typography
+          sx={{ my: "10" }}
+          variant="body1"
+          color="textPrimary"
+          align="center"
+        >
+          【ビジネス課題・技術課題を抱えている方】
+          <br />
+          課題ベース構いません、どう解決していくか一緒に進められればと思います。
+          <br />
+          ぜひ、教えてください。
+        </Typography>
+      </Typography>
     </Box>
   );
 }

@@ -50,10 +50,10 @@ function ContactForm() {
         Contact
       </Typography>
       <Typography
-        variant="body1"
+        sx={{ my: 5 }}
+        variant="body2"
         color="textPrimary"
         align="center"
-        sx={{ marginTop: 2, marginBottom: 2 }}
       >
         ご質問やご相談がございましたら、お気軽にご連絡ください。
         <br />
@@ -61,30 +61,11 @@ function ContactForm() {
       </Typography>
       <Grid container spacing={4} minHeight="60vh" alignItems="center">
         <Grid xs={12} md={12} sx={{ padding: 0 }}>
-          <Box
-            sx={{
-              borderBottom: 1,
-              borderColor: "divider",
-              display: "flex",
-              justifyContent: "center",
-              marginTop: 2,
-            }}
-          >
-            <Tabs value={value} onChange={handleChange}>
-              <Tab label="個人宛" />
-              <Tab label="会社宛" />
-            </Tabs>
-          </Box>
-          <TabPanel value={value} index={0}>
-            TEL: 070-3514-7684
+          <Typography variant="h4" color="textPrimary" align="center">
+            070-3514-7684
             <br />
-            MAIL: eiki111ixa@icloud.com
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            TEL: 070-3514-7684
-            <br />
-            MAIL: navitex20230509@gmail.com
-          </TabPanel>
+            eiki111ixa@icloud.com
+          </Typography>
         </Grid>
         <Grid xs={12} md={12} sx={{ padding: 0 }}>
           <form onSubmit={handleSubmit}>

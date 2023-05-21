@@ -42,6 +42,14 @@ export default function Works() {
       <Typography variant="h2" color="textPrimary" align="center">
         Works
       </Typography>
+      <Typography
+        sx={{ my: 3 }}
+        variant="body2"
+        color="textPrimary"
+        align="center"
+      >
+        案件については、公開可能範囲のみとなります。
+      </Typography>
       <Box
         sx={{
           borderBottom: 1,
