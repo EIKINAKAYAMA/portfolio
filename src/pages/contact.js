@@ -65,6 +65,18 @@ function ContactForm() {
         <Grid xs={12} md={12} sx={{ padding: 0 }}>
           <form onSubmit={handleSubmit}>
             <TextField
+              InputLabelProps={{
+                style: {
+                  color: "#00FF00", // ラベルのカラーを指定
+                },
+              }}
+              InputProps={{
+                inputProps: {
+                  style: {
+                    color: "#00FF00", // カラーを指定
+                  },
+                },
+              }}
               required
               fullWidth
               margin="normal"
@@ -73,6 +85,18 @@ function ContactForm() {
               onChange={(e) => setSubject(e.target.value)}
             />
             <TextField
+              InputLabelProps={{
+                style: {
+                  color: "#00FF00", // ラベルのカラーを指定
+                },
+              }}
+              InputProps={{
+                inputProps: {
+                  style: {
+                    color: "#00FF00", // カラーを指定
+                  },
+                },
+              }}
               required
               fullWidth
               margin="normal"
@@ -85,7 +109,15 @@ function ContactForm() {
             <Box
               sx={{ display: "flex", justifyContent: "center", marginTop: 2 }}
             >
-              <Button variant="contained" type="submit">
+              <Button
+                variant="contained"
+                type="submit"
+                style={{
+                  border: "2px solid #00FF00",
+                  backgroundColor: "black",
+                  color: "#00FF00",
+                }}
+              >
                 送信
               </Button>
             </Box>

@@ -16,9 +16,9 @@ export default function RightTimelineContent(props) {
     <Timeline sx={{ margin: 0, padding: 0 }}>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot />
-          <TimelineConnector />
+          <TimelineConnector style={{ backgroundColor: "#00FF00" }} />
+          <TimelineDot style={{ backgroundColor: "#00FF00" }} />
+          <TimelineConnector style={{ backgroundColor: "#00FF00" }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span" color="#00FF00">

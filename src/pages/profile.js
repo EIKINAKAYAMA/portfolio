@@ -71,9 +71,9 @@ export default function Profile() {
       <Typography variant="h3" color="#00FF00" align="center">
         来歴
       </Typography>
-      <Divider sx={{ my: "20px" }} />
+      <Divider color="#00FF00" sx={{ my: "20px" }} />
       <ProfileTimeline />
-      <Divider sx={{ my: "50px" }} />
+      <Divider color="#00FF00" sx={{ my: "50px" }} />
       <Typography
         sx={{ my: "50px" }}
         variant="h4"
