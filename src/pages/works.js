@@ -15,7 +15,7 @@ const TabPanel = (props) => {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography variant="subtitle1" color="textPrimary" align="center">
+          <Typography variant="subtitle1" color="#00FF00" align="center">
             {children}
           </Typography>
         </Box>
@@ -39,16 +39,11 @@ export default function Works() {
         my: "10vh",
       }}
     >
-      <Typography variant="h2" color="textPrimary" align="center">
+      <Typography variant="h2" color="#00FF00" align="center">
         Works
       </Typography>
-      <Typography
-        sx={{ my: 3 }}
-        variant="body2"
-        color="textPrimary"
-        align="center"
-      >
-        案件については、公開可能範囲のみとなります。
+      <Typography sx={{ my: 3 }} variant="body2" color="#00FF00" align="center">
+        公開可能範囲のみ
       </Typography>
       <Box
         sx={{
@@ -60,8 +55,8 @@ export default function Works() {
         }}
       >
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="趣味" />
-          <Tab label="案件" />
+          <Tab style={{ color: "#00FF00" }} label="趣味" />
+          <Tab style={{ color: "#00FF00" }} label="案件" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

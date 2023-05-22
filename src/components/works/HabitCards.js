@@ -19,7 +19,7 @@ export default function HabitCards() {
           image="/img/tetris.png"
           title="テトリス（WEBアプリ）"
           skill="React"
-          description="普通のテトリスのロジックを改造し、難易度を上げたテトリス"
+          description="テトリスのロジックを改造、難易度を上げたテトリス"
           pageLink="https://eikinakayama.github.io/tetris/"
           gitLink="https://github.com/EIKINAKAYAMA/tetris"
         />
@@ -29,7 +29,7 @@ export default function HabitCards() {
           image="/img/practice_react.png"
           title="四目並べ（WEBアプリ）"
           skill="React"
-          description="Reactチュートリアルを触ってみた際、少し改変した四目並べ"
+          description="改変した四目並べ（Reactチュートリアル応用）"
           pageLink="https://eikinakayama.github.io/practice_react/"
           gitLink="https://github.com/EIKINAKAYAMA/practice_react"
         />
@@ -39,7 +39,7 @@ export default function HabitCards() {
           image="/img/original-port-scanner.png"
           title="ポートスキャナー（ツール）"
           skill="Python"
-          description="指定IPの解放ポートを検索し、接続を実施してくれるスキャナ。"
+          description="指定IPの解放ポートを検索、接続するスキャナ。"
           pageLink=""
           gitLink="https://github.com/EIKINAKAYAMA/original-port-scanner"
         />

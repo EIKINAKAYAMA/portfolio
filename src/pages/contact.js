@@ -14,7 +14,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography variant="subtitle1" color="textPrimary" align="center">
+          <Typography variant="subtitle1" color="#00FF00" align="center">
             {children}
           </Typography>
         </Box>
@@ -46,22 +46,17 @@ function ContactForm() {
         my: "10vh",
       }}
     >
-      <Typography variant="h2" color="textPrimary" align="center">
+      <Typography variant="h2" color="#00FF00" align="center">
         Contact
       </Typography>
-      <Typography
-        sx={{ my: 5 }}
-        variant="body2"
-        color="textPrimary"
-        align="center"
-      >
+      <Typography sx={{ my: 5 }} variant="body2" color="#00FF00" align="center">
         ご質問やご相談がございましたら、お気軽にご連絡ください。
         <br />
         ビジネスのご依頼や取り扱いに関するお問い合わせも、このフォームから承っております。
       </Typography>
       <Grid container spacing={4} minHeight="60vh" alignItems="center">
         <Grid xs={12} md={12} sx={{ padding: 0 }}>
-          <Typography variant="h4" color="textPrimary" align="center">
+          <Typography variant="h4" color="#00FF00" align="center">
             070-3514-7684
             <br />
             eiki111ixa@icloud.com

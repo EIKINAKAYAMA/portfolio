@@ -19,10 +19,10 @@ export default function LeftTimelineContent(props) {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span" color="textPrimary">
+          <Typography variant="h6" component="span" color="#00FF00">
             {props.date}
           </Typography>
-          <Typography color="textPrimary">{props.text}</Typography>
+          <Typography color="#00FF00">{props.text}</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

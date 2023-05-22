@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
       mode: "dark",
     },
     typography: {
-      fontFamily: '"Meiryo", "sans-serif"',
+      fontFamily: "CustomFont, sans-serif",
     },
   });
 
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <Header />
-      <MatrixRain />
+      {/* <MatrixRain /> */}
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Component {...pageProps} />

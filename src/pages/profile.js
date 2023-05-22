@@ -34,7 +34,7 @@ export default function Profile() {
         my: "10vh",
       }}
     >
-      <Typography variant="h2" color="textPrimary" align="center">
+      <Typography variant="h2" color="#00FF00" align="center">
         profile
       </Typography>
       <Grid container spacing={2} alignItems="center" sx={{ my: "10vh" }}>
@@ -54,23 +54,21 @@ export default function Profile() {
           />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Typography variant="h6" color="textPrimary">
+          <Typography variant="h6" color="#00FF00">
             中山英奇
           </Typography>
-          <Typography variant="body1" color="textPrimary">
+          <Typography variant="body1" color="#00FF00">
             {calculateAge("1994-11-01")}歳
           </Typography>
-          <Typography variant="body1" color="textPrimary">
+          <Typography variant="body1" color="#00FF00">
             フルスタックエンジニア
           </Typography>
-          <Typography variant="caption" color="textPrimary">
-            先端技術を取り入れ、マイクロ化していくサービスを、
-            <br />
-            高速・安定・低コストに、ローンチする手伝いをしています。
+          <Typography variant="caption" color="#00FF00">
+            システム作ります。任せてください
           </Typography>
         </Grid>
       </Grid>
-      <Typography variant="h3" color="textPrimary" align="center">
+      <Typography variant="h3" color="#00FF00" align="center">
         来歴
       </Typography>
       <Divider sx={{ my: "20px" }} />
@@ -79,34 +77,10 @@ export default function Profile() {
       <Typography
         sx={{ my: "50px" }}
         variant="h4"
-        color="textPrimary"
+        color="#00FF00"
         align="center"
       >
         ご相談・案件お待ちしています。
-        <Typography
-          sx={{ my: "20px" }}
-          variant="body1"
-          color="textPrimary"
-          align="center"
-        >
-          【エンジニアを探している方】
-          <br />
-          私が得意としない領域でも、優秀な仲間をご紹介させていただきます。
-          <br />
-          ぜひ、一度ご相談ください。
-        </Typography>
-        <Typography
-          sx={{ my: "10" }}
-          variant="body1"
-          color="textPrimary"
-          align="center"
-        >
-          【ビジネス課題・技術課題を抱えている方】
-          <br />
-          課題ベース構いません、どう解決していくか一緒に進められればと思います。
-          <br />
-          ぜひ、教えてください。
-        </Typography>
       </Typography>
     </Box>
   );

@@ -27,6 +27,8 @@ export default function ImageCard({
             <Typography
               gutterBottom
               variant="body1"
+              fontWeight="bold"
+              color="#00FF00"
               component="div"
               align="left"
             >
@@ -35,15 +37,15 @@ export default function ImageCard({
             <Typography
               sx={{ my: 1 }}
               variant="body2"
-              color="text.secondary"
+              color="#00FF00"
               align="left"
             >
               {skill}
             </Typography>
-            <div style={{ height: "2em", overflow: "hidden" }}>
+            <div style={{ height: "3em", overflow: "hidden" }}>
               <Typography
                 variant="body2"
-                color="text.secondary"
+                color="#00FF00"
                 align="left"
                 style={{ lineHeight: "1em" }}
               >

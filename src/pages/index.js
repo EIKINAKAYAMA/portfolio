@@ -10,7 +10,7 @@ export default function Home() {
       direction="column"
       // ref={myRef}
     >
-      <Typography color="textPrimary">Deploy OR DIE</Typography>
+      <Typography color="#00FF00">Deploy OR DIE</Typography>
     </Grid>
   );
 }

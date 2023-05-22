@@ -11,7 +11,7 @@ export default function SkillLevel(props) {
     >
       <Typography
         variant="body2"
-        color="textPrimary"
+        color="#00FF00"
         sx={{ mx: 3, width: "50%", textAlign: "right" }}
       >
         {props.skillName}

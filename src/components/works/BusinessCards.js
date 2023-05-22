@@ -9,7 +9,7 @@ export default function BusinessCards() {
           image="/img/openpage.png"
           title="CMS開発（WEBアプリ）"
           skill="Vue, Laravel, Docker, AWS"
-          description="AI音声認証・文字起こしなどの、フロントエンド・バックエンド機能の開発"
+          description="AI音声認証・文字起こしなど、フロントエンド・バックエンド機能を開発"
           pageLink="https://openpage.co.jp/"
           gitLink=""
         />
@@ -19,7 +19,7 @@ export default function BusinessCards() {
           image="/img/trideal.png"
           title="API開発（モバイルアプリ）"
           skill="TypeScript, AWS, React Native"
-          description="旅行アプリのバックエンド・API開発"
+          description="旅行アプリのバックエンド・APIを開発"
           pageLink="https://trideal.net/ramble"
           gitLink=""
         />
@@ -29,7 +29,7 @@ export default function BusinessCards() {
           image="/img/primaji.png"
           title="API開発（組込アプリ）"
           skill="TypeScript, AWS"
-          description="オリジナルTシャツ作成に伴う画像変換API開発"
+          description="オリジナルTシャツ作成用、画像変換APIを開発"
           pageLink=""
           gitLink=""
         />
@@ -39,7 +39,7 @@ export default function BusinessCards() {
           image="/img/laravel-admin.png"
           title="管理画面開発（WEBアプリ）"
           skill="Laravel, Docker"
-          description="オリジナルTシャツ作成に伴う画像変換API開発"
+          description="管理画面のフロント・バックエンド機能を開発"
           pageLink=""
           gitLink=""
         />
