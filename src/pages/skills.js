@@ -20,11 +20,16 @@ export default function Skills() {
         color="textPrimary"
         align="center"
       >
-        トレンドに従った得意領域を記載しています。
+        代表的なものを記載しています。
       </Typography>
 
       <Grid container spacing={2} minHeight="60vh" alignItems="flex-start">
-        <Grid xs={12} sm={6} sx={{ my: "20px", position: "relative", top: 0 }}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          sx={{ my: "20px", position: "relative", top: 0 }}
+        >
           <Typography variant="h6" color="textPrimary" align="center">
             開発言語
           </Typography>
@@ -36,7 +41,7 @@ export default function Skills() {
           <SkillLevel skillName="Ruby" skillLevel={3} />
           <SkillLevel skillName="Java" skillLevel={2} />
         </Grid>
-        <Grid xs={12} sm={6} sx={{ my: "20px" }}>
+        <Grid item xs={12} sm={6} sx={{ my: "20px" }}>
           <Typography variant="h6" color="textPrimary" align="center">
             フレームワーク
           </Typography>
@@ -48,7 +53,7 @@ export default function Skills() {
           <SkillLevel skillName="ROR" skillLevel={3} />
           <SkillLevel skillName="Spring" skillLevel={2} />
         </Grid>
-        <Grid xs={12} sm={6} sx={{ my: "20px" }}>
+        <Grid item xs={12} sm={6} sx={{ my: "20px" }}>
           <Typography variant="h6" color="textPrimary" align="center">
             インフラ系
           </Typography>
@@ -58,7 +63,7 @@ export default function Skills() {
           <SkillLevel skillName="Docker" skillLevel={4} />
           <SkillLevel skillName="Kubernetes" skillLevel={2} />
         </Grid>
-        <Grid xs={12} sm={6} sx={{ my: "20px" }}>
+        <Grid item xs={12} sm={6} sx={{ my: "20px" }}>
           <Typography variant="h6" color="textPrimary" align="center">
             その他
           </Typography>

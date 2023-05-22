@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/lab": "^5.0.0-alpha.129",
     "@mui/material": "^5.12.3",
+    "@use-it/interval": "^1.0.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
