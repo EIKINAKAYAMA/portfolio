@@ -4,7 +4,6 @@ import {
   TimelineContent,
   TimelineDot,
   TimelineItem,
-  TimelineOppositeContent,
   TimelineSeparator,
 } from "@mui/lab";
 import { Typography } from "@mui/material";

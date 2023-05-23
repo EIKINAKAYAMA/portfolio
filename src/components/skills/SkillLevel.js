@@ -1,4 +1,4 @@
-import { Rating, Box, Typography } from "@mui/material";
+import { Box, Rating, Typography } from "@mui/material";
 
 export default function SkillLevel(props) {
   return (

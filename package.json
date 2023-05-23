@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
     "@mui/lab": "^5.0.0-alpha.129",
     "@mui/material": "^5.12.3",
     "@use-it/interval": "^1.0.0",
@@ -20,8 +21,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-scroll": "^1.8.9",
     "ress": "^5.0.2",
-    "three": "^0.152.2",
-    "vanta": "^0.5.24"
+    "sass": "^1.62.1"
   }
 }

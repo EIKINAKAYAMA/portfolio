@@ -1,15 +1,5 @@
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineOppositeContent,
-  TimelineSeparator,
-} from "@mui/lab";
-import { Typography } from "@mui/material";
-import RightTimelineContent from "./RightTimelineContent";
 import LeftTimelineContent from "./LeftTimelineContent";
+import RightTimelineContent from "./RightTimelineContent";
 
 export default function ProfileTimeline() {
   return (

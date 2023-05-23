@@ -56,7 +56,7 @@ function ContactForm() {
       </Typography>
       <Grid container spacing={4} minHeight="60vh" alignItems="center">
         <Grid xs={12} md={12} sx={{ padding: 0 }}>
-          <Typography variant="h4" color="#00FF00" align="center">
+          <Typography variant="body1" color="#00FF00" align="center">
             070-3514-7684
             <br />
             eiki111ixa@icloud.com
@@ -67,13 +67,13 @@ function ContactForm() {
             <TextField
               InputLabelProps={{
                 style: {
-                  color: "#00FF00", // ラベルのカラーを指定
+                  color: "#00FF00",
                 },
               }}
               InputProps={{
                 inputProps: {
                   style: {
-                    color: "#00FF00", // カラーを指定
+                    color: "#00FF00",
                   },
                 },
               }}

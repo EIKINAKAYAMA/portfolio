@@ -2,10 +2,10 @@ import ProfileTimeline from "@/components/profile/ProfileTimeline";
 import {
   Avatar,
   Box,
+  Divider,
   Grid,
   Typography,
   useMediaQuery,
-  Divider,
 } from "@mui/material";
 
 const calculateAge = (birthday) => {
@@ -73,15 +73,6 @@ export default function Profile() {
       </Typography>
       <Divider color="#00FF00" sx={{ my: "20px" }} />
       <ProfileTimeline />
-      <Divider color="#00FF00" sx={{ my: "50px" }} />
-      <Typography
-        sx={{ my: "50px" }}
-        variant="h4"
-        color="#00FF00"
-        align="center"
-      >
-        ご相談・案件お待ちしています。
-      </Typography>
     </Box>
   );
 }
