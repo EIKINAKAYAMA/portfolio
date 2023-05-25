@@ -56,7 +56,7 @@ export default function Profile() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography variant="h6" color="#00FF00">
-            中山英奇
+            Eiki Nakayama
           </Typography>
           <Typography variant="body1" color="#00FF00">
             {calculateAge("1994-11-01")}歳

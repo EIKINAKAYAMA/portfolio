@@ -8,7 +8,7 @@ export default function HabitCards() {
         <ImageCard
           image="/img/portfolio.png"
           title="ポートフォリオ（WEBアプリ）"
-          skill="JavaScript(Vue)"
+          skill="JavaScript(Next)"
           description="このポートフォリオ"
           pageLink="https://portfolio-eikinakayama.vercel.app/"
           gitLink="https://github.com/EIKINAKAYAMA/portfolio"
