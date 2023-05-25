@@ -10,7 +10,7 @@ export default function HabitCards() {
           title="ポートフォリオ（WEBアプリ）"
           skill="JavaScript(Vue)"
           description="このポートフォリオ"
-          pageLink="https://eikinakayama.github.io/portfolio/"
+          pageLink="https://portfolio-eikinakayama.vercel.app/"
           gitLink="https://github.com/EIKINAKAYAMA/portfolio"
         />
       </Grid>

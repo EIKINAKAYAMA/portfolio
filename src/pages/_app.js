@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
-      {/* <MatrixRain /> */}
+      <MatrixRain />
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Component {...pageProps} />
