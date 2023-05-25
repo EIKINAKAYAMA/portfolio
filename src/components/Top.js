@@ -18,9 +18,9 @@ export default function Top() {
           sequence={[
             1000,
             "お！",
-            2000, // Waits 1s
+            2000,
             "見つけていただき、ありがとうございます！",
-            2000, // Waits 2s
+            2000,
             "ぜひ、ご覧ください。",
             1500,
             () => {
@@ -56,9 +56,6 @@ export default function Top() {
           </Link>
         </div>
       )}
-      {/* <div className="scroll-arrow" onClick={handleClick}>
-        <span>▼</span>
-      </div> */}
     </Grid>
   );
 }
