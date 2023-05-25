@@ -1,4 +1,5 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { AiOutlineLink } from "react-icons/ai";
 import { IoLogoInstagram } from "react-icons/io5";
 
 export const InstagramIcon = () => {
@@ -15,4 +16,7 @@ export const FacebookIcon = () => {
 };
 export const TwitterIcon = () => {
   return <FaTwitter />;
+};
+export const OutlineLink = () => {
+  return <AiOutlineLink />;
 };

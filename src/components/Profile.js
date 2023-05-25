@@ -6,8 +6,9 @@ import {
   Grid,
   Typography,
   useMediaQuery,
+  IconButton,
 } from "@mui/material";
-
+import { GithubIcon, TwitterIcon } from "../lib/icons";
 const calculateAge = (birthday) => {
   const birthDate = new Date(birthday);
   const now = new Date();
@@ -66,6 +67,14 @@ export default function Profile() {
           <Typography variant="caption" color="#00FF00">
             システム作ります。任せてください
           </Typography>
+          <Box>
+            <IconButton href="https://github.com/EIKINAKAYAMA">
+              <GithubIcon />
+            </IconButton>
+            <IconButton href="https://twitter.com/eiki111ixa">
+              <TwitterIcon />
+            </IconButton>
+          </Box>
         </Grid>
       </Grid>
       <Typography variant="h3" color="#00FF00" align="center">
