@@ -36,9 +36,6 @@ const Layout = ({ children, title }) => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {/* <MenuItem>
-        <ScrollButton to="top" title="top" />
-      </MenuItem> */}
       <MenuItem>
         <ScrollButton to="works" title="works" />
       </MenuItem>

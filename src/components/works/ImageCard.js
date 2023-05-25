@@ -32,14 +32,16 @@ export default function ImageCard({
           >
             {title}
           </Typography>
-          <Typography
-            sx={{ my: 1 }}
-            variant="body2"
-            color="#00FF00"
-            align="left"
-          >
-            {skill}
-          </Typography>
+          <div style={{ height: "4em", overflow: "hidden" }}>
+            <Typography
+              sx={{ my: 1, lineHeight: "1em" }}
+              variant="body2"
+              color="#00FF00"
+              align="left"
+            >
+              {skill}
+            </Typography>
+          </div>
           <div style={{ height: "3em", overflow: "hidden" }}>
             <Typography
               variant="body2"

@@ -6,9 +6,9 @@ export default function HabitCards() {
     <Grid container spacing={4}>
       <Grid xs={12} sm={6} md={4}>
         <ImageCard
-          image="/img/tetris.png"
+          image="/img/portfolio.png"
           title="ポートフォリオ（WEBアプリ）"
-          skill="Next"
+          skill="JavaScript(Vue)"
           description="このポートフォリオ"
           pageLink="https://eikinakayama.github.io/portfolio/"
           gitLink="https://github.com/EIKINAKAYAMA/portfolio"
@@ -18,7 +18,7 @@ export default function HabitCards() {
         <ImageCard
           image="/img/tetris.png"
           title="テトリス（WEBアプリ）"
-          skill="React"
+          skill="JavaScript(React)"
           description="テトリスのロジックを改造、難易度を上げたテトリス"
           pageLink="https://eikinakayama.github.io/tetris/"
           gitLink="https://github.com/EIKINAKAYAMA/tetris"
@@ -28,7 +28,7 @@ export default function HabitCards() {
         <ImageCard
           image="/img/practice_react.png"
           title="四目並べ（WEBアプリ）"
-          skill="React"
+          skill="JavaScript(React)"
           description="改変した四目並べ（Reactチュートリアル応用）"
           pageLink="https://eikinakayama.github.io/practice_react/"
           gitLink="https://github.com/EIKINAKAYAMA/practice_react"
