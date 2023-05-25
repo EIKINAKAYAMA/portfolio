@@ -4,11 +4,11 @@ import {
   Box,
   Divider,
   Grid,
+  IconButton,
   Typography,
   useMediaQuery,
-  IconButton,
 } from "@mui/material";
-import { GithubIcon, TwitterIcon } from "../lib/icons";
+import { OutlineLink, GithubIcon, TwitterIcon } from "../lib/icons";
 const calculateAge = (birthday) => {
   const birthDate = new Date(birthday);
   const now = new Date();
@@ -65,7 +65,7 @@ export default function Profile() {
             フルスタックエンジニア
           </Typography>
           <Typography variant="caption" color="#00FF00">
-            システム作ります。任せてください
+            システム作ります。お任せください。
           </Typography>
           <Box>
             <IconButton href="https://github.com/EIKINAKAYAMA">
@@ -73,6 +73,9 @@ export default function Profile() {
             </IconButton>
             <IconButton href="https://twitter.com/eiki111ixa">
               <TwitterIcon />
+            </IconButton>
+            <IconButton href="https://www.navitex-tech.com/">
+              <OutlineLink />
             </IconButton>
           </Box>
         </Grid>

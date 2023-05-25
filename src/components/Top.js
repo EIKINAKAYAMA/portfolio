@@ -1,7 +1,10 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Button } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
+import { useState } from "react";
 
 export default function Top() {
+  const [processingComplete, setProcessingComplete] = useState(false);
   return (
     <Grid
       container
@@ -19,7 +22,9 @@ export default function Top() {
             "見つけていただき、ありがとうございます！",
             2000, // Waits 2s
             "ぜひ、ご覧ください。",
+            1500,
             () => {
+              setProcessingComplete(true);
               console.log("Sequence completed"); // Place optional callbacks anywhere in the array
             },
           ]}
@@ -34,6 +39,26 @@ export default function Top() {
           }}
         />
       </Typography>
+      {processingComplete && (
+        <div style={{ cursor: "pointer" }}>
+          <Link
+            to="works"
+            smooth={true}
+            offset={-50}
+            duration={500}
+            delay={500}
+          >
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </Link>
+        </div>
+      )}
+      {/* <div className="scroll-arrow" onClick={handleClick}>
+        <span>▼</span>
+      </div> */}
     </Grid>
   );
 }
