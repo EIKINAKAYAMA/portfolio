@@ -6,6 +6,16 @@ export default function HabitCards() {
     <Grid container spacing={4}>
       <Grid xs={12} sm={6} md={4}>
         <ImageCard
+          image="/img/git-contributions-cheater.png"
+          title="GitContributionsCheater（ツール）"
+          skill="Python"
+          description="GitHubの草を自由にカスタマイズすることができるツール"
+          pageLink=""
+          gitLink="https://github.com/EIKINAKAYAMA/git-contributions-cheater"
+        />
+      </Grid>
+      <Grid xs={12} sm={6} md={4}>
+        <ImageCard
           image="/img/portfolio.png"
           title="ポートフォリオ（WEBアプリ）"
           skill="JavaScript(Next)"

@@ -74,9 +74,9 @@ export default function Profile() {
             <IconButton href="https://twitter.com/eiki111ixa">
               <TwitterIcon />
             </IconButton>
-            <IconButton href="https://www.navitex-tech.com/">
+            {/* <IconButton href="https://www.navitex-tech.com/">
               <OutlineLink />
-            </IconButton>
+            </IconButton> */}
           </Box>
         </Grid>
       </Grid>
