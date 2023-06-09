@@ -13,13 +13,16 @@ export default function ProfileTimeline() {
         date="2021/01"
         text="スポーツ公式サイト技術選定サポート"
       />
-      <RightTimelineContent date="2021/08" text="フリーランス活動の本格化" />
+      {/* <RightTimelineContent date="2021/08" text="エンジニア活動の本格化" /> */}
       <LeftTimelineContent
         date="2021/09"
         text="大手通信会社のCI/CD基盤構築リード"
       />
-      <RightTimelineContent date="2022/11" text="組織開発案件の受注開始" />
-      <RightTimelineContent date="2023/05" text="Navitexを創業" />
+      {/* <RightTimelineContent date="2022/11" text="組織開発案件の受注開始" /> */}
+      {/* <RightTimelineContent
+        date="2023/05"
+        text="Navitex設立・テクニカルアドバイザー就任"
+      /> */}
     </>
   );
 }
